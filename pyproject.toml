@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=82.0.1"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "roasts_and_recipes"
+requires-python = ">=3.13"
+dynamic = ["readme"]
+version = "0.0.0"
+dependencies = [
+    "mkdocs==1.6.1",
+    "mkdocs-material==9.7.7",
+]
+authors = [
+    {name = "Rhys Deimel", email = "deimelr@hotmail.com"},
+]
+maintainers = [
+    {name = "Rhys Deimel", email = "deimelr@hotmail.com"},
+]
+
+[dependency-groups]
+test = [
+    "pyspelling <=2.12.1",
+]
+
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}

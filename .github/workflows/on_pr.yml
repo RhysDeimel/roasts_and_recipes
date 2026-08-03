@@ -8,19 +8,20 @@ jobs:
   spellcheck:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
       - name: Spellcheck
-        uses: rojopolis/spellcheck-github-actions@0.63.0
+        uses: rojopolis/spellcheck-github-actions@e619e00ca22f01ade9d73048dcd6518bedc552f2 # v0.63.0
 
   test_build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
-          python-version: 3.11
+          python-version: 3.13
           cache: 'pip'
-      - run: pip install -r requirements.txt
+      - run: |
+          pip install --upgrade pip
+          pip install . --only-deps
       - name: Test site generation
         run: mkdocs build --clean
-
