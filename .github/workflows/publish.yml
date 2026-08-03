@@ -31,7 +31,7 @@ jobs:
           cache: 'pip'
       - run: |
           pip install --upgrade pip
-          pip install --no-deps
+          pip install . --only-deps
 
       - name: Generate site
         run: mkdocs build --clean

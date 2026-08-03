@@ -22,6 +22,6 @@ jobs:
           cache: 'pip'
       - run: |
           pip install --upgrade pip
-          pip install --only-deps
+          pip install . --only-deps
       - name: Test site generation
         run: mkdocs build --clean
