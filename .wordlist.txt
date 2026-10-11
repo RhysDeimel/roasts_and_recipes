@@ -1,6 +1,7 @@
 al
 asian
 basmati
+belachan
 Bok
 Bucatini
 Carbonara
@@ -12,6 +13,8 @@ Chokos
 Choy
 config
 Cumquat
+dal
+Dal
 dechlorinated
 dente
 Eschallots
@@ -20,9 +23,11 @@ Frenched
 grana
 guanciale
 hanout
+indian
 lengthways
 Loquats
 Lychees
+malaysian
 Mangosteens
 meltingly
 MKDocs
@@ -31,6 +36,7 @@ mulloway
 Murcot
 Nashi
 nero
+nigella
 nuoc
 Nuoc
 padano
@@ -44,6 +50,8 @@ Rambutans
 ras
 rindless
 romano
+sambal
+Sambal
 sauté
 Silverbeet
 Sri
